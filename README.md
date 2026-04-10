@@ -1,4 +1,4 @@
-# 📷 README — Installation et utilisation d’une caméra Raspberry Pi Module 3
+# 📷 README — Installation et utilisation d’une caméra Raspberry Pi Module 3 sur une Jubilee
 
 ## Application : Détection de lentilles d’eau
 
@@ -6,7 +6,7 @@
 
 ## 📌 Description
 
-Ce projet vise à intégrer une **caméra Raspberry Pi Module 3** dans un système embarqué afin de capturer des images exploitables pour la **détection automatisée de lentilles d’eau**.
+Ce github vise à intégrer une **caméra Raspberry Pi Module 3** sur la machine Jubilee afin de capturer des images exploitables pour la **détection automatisée de lentilles d’eau**.
 
 Le système repose sur :
 
@@ -24,7 +24,7 @@ Le système repose sur :
 * Caméra Raspberry Pi Module 3
 * Carte Raspberry Pi
 * Carte micro-SD configurée
-* Support mécanique (porte-outil adapté)
+* Support mécanique - porte outil - ajouter le lien vers les printables
 * Vis de fixation
 * Câble nappe (CSI)
 
@@ -80,7 +80,7 @@ Depuis un navigateur web :
 * Via l’adresse IP de la Raspberry Pi
 
   ```
-  http://<IP>/webcam/
+  http://<IP>
   ```
 * Ou via le nom d’hôte :
 
@@ -103,9 +103,9 @@ Exemple de script Python permettant de récupérer une image :
 import requests
 from datetime import datetime
 
-OCTOPI_IP = "10.0.9.55"
+OCTOPI_IP = "______" #ajouter votre adresse IP ici
 
-def capture_octopi_image(etat="", url=f"http://{OCTOPI_IP}/webcam/?action=snapshot", output_file=None):
+def capture_octopi_image url=f"http://{OCTOPI_IP}/webcam/?action=snapshot", output_file=None):
     if output_file is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_file = "avant.jpg" if etat == "avant" else "apres.jpg"
@@ -161,7 +161,6 @@ Les images capturées peuvent être utilisées pour :
 * Ajout d’un modèle de détection automatique (IA)
 * Capture périodique (timelapse)
 * Interface web de visualisation
-* Détection en temps réel
 
 ---
 

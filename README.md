@@ -24,7 +24,9 @@ Le système repose sur :
 * Caméra Raspberry Pi Module 3
 * Carte Raspberry Pi
 * Carte micro-SD configurée
-* Support mécanique - porte outil - https://www.printables.com/model/1679222-pieces-porte-outil-jubilee-raspberry-module-3
+* Support mécanique - porte outil -
+  * https://www.printables.com/model/1679222-pieces-porte-outil-jubilee-raspberry-module-3
+  * https://www.printables.com/model/1276113-jubilee-toolhead-adapter-for-enderscope
 * Vis de fixation
 * Câble nappe (CSI)
 

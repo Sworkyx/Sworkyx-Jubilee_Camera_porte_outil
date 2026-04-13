@@ -24,7 +24,7 @@ Le système repose sur :
 * Caméra Raspberry Pi Module 3
 * Carte Raspberry Pi
 * Carte micro-SD configurée
-* Support mécanique - porte outil - ajouter le lien vers les printables
+* Support mécanique - porte outil - https://www.printables.com/model/1679222-pieces-porte-outil-jubilee-raspberry-module-3
 * Vis de fixation
 * Câble nappe (CSI)
 
